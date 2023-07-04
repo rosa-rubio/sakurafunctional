@@ -1,0 +1,19 @@
+.botonDestino {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    margin-bottom: 50px;
+    text-decoration: none;
+  }
+  
+  .cajaTexto {
+        background-color: #FDB044;
+        padding: 10px;
+        color: black;
+        border-radius: 15px;
+      }
+      
+  
+  

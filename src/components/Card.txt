@@ -1,0 +1,59 @@
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import './Card.css';
+
+function Card() {
+    const [cards, setCards] = useState([]);
+    
+    
+    useEffect(() => {
+      axios.get('https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/')
+      .then((res) => {
+        setCards(res?.data);
+      })
+      .catch((e) => {
+        console.log(e);
+      })
+    }, []);
+    
+  /*useEffect(() => {
+    axios.get('https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/')
+      .then((res) => {
+        const shuffledCards = res.data.slice().sort(() => Math.random() - 0.5);
+        setCards(shuffledCards);
+      })
+      .catch((e) => {
+        console.log(e);
+      })
+  }, []); */
+
+function randomCard() {
+  let randomCardItem = Math.floor(Math.random() * 51);
+  const clickedCard = document.getElementById(`${randomCardItem}`);
+  clickedCard.classList.add("hidden");
+  console.log(randomCardItem);
+  }
+
+
+
+    return (
+      <div className="cards-container">
+        <div className="text">
+          <h1>Choose three cards:</h1>
+        </div>  
+      <div className="three-cards">
+        <div className="reading-card">Past</div>
+        <div className="reading-card">Present</div>
+        <div className="reading-card">Future</div>
+      </div>
+      <div className="all-cards">
+        {cards.map((card) => (
+          <div key={card.id} className="each-card" id={card.id} onClick={randomCard}>
+            <img src={card.cardsReverse.sakuraReverse} alt="reverso de las cartas" />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+  export default Card;

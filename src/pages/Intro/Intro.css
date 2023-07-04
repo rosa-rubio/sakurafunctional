@@ -1,0 +1,15 @@
+.intro {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/fondo-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 390px) {
+    .intro {
+        background-image: url('../../assets/fondo-desktop.svg');
+        background-size: contain;
+    }
+  }

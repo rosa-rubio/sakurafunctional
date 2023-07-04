@@ -1,0 +1,43 @@
+.main-intro{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    margin-top: 1em;
+    transform: scale(0.45);
+    width: 13em;
+}
+
+.hands{
+    padding-bottom: 1rem;
+    width: 175px;
+    height: 175px;
+}
+
+
+.text{
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 30rem;
+}
+
+.texto1{
+    margin-top: 0;
+}
+
+@media (max-width: 390px) {
+    .text{
+        width: 17rem;
+    }
+  }

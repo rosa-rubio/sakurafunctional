@@ -1,0 +1,24 @@
+.header{
+  display: flex;
+  margin: 2%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.navegation{
+  display: flex;
+  justify-content:space-between;
+  width: 80%;
+  margin:3% 4%;
+}
+
+@media (min-width:450px){
+  .btn-back{
+    display: none;
+  width: 15px;
+  margin: 0px 10px;
+}
+}
+
+

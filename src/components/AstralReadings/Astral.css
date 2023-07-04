@@ -1,0 +1,61 @@
+.main-reading{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    margin-bottom:30px;
+    background: #D0851E;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.reading-card {
+    width: 100%;
+}
+
+.cart-bw{
+    width: 150px;
+    margin: auto;
+    display: flex;
+}
+
+.store-readings{
+    margin-top:50px ;
+}
+
+/* .predictions{
+    width: 100%;
+    margin: auto;
+    margin-bottom:30px;
+    background: #D0851E;
+    border-radius: 15px;
+    padding: 10px;
+} */
+
+.comeback{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.back{
+    width: 12px;
+    /* margin: auto; */
+    align-content: center;
+    margin-right:5px;
+}
+
+@media (max-width:450px){
+.comeback{
+    display: none;
+}
+}
